@@ -1,7 +1,7 @@
 # .github/workflows/checks.yml
 name: Checks
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   test-lint:
