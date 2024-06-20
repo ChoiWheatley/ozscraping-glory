@@ -11,7 +11,7 @@ ENV PYTHONUNBUFFERED=1
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./app /app
-COPY ./.flake8 /app/.flake8
+COPY ./app/.flake8 /app/.flake8
 
 # 작업 디렉토리를 /app으로 설정
 WORKDIR /app
