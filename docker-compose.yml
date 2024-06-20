@@ -3,14 +3,14 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
       args:
         - DEV=true
     ports:
       - "8000:8000"
     volumes:
       - ./app:/app
-    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "echo 왔니?!"
     environment:
       - DB_HOST=db
       - DB_NAME=youtube
