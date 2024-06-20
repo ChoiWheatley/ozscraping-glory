@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: DockerFile
+      dockerfile: Dockerfile
       args:
         - DEV=true
     ports:
